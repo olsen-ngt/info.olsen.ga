@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info</title>
-    <link id="favicon" rel="shortcut icon" href="" type="image/x-icon">
+    <title> Information Link </title>
+    <meta name="description" content=""/>
+    <meta name="author" content="Olsen-ngt"/>
+    <link rel="shortcut icon" href="./public/images/favicon.svg">
 
 
     <link rel="stylesheet" href="./public/css/app.css">
@@ -46,13 +48,13 @@
                         var today = new Date()
                         var curHr = today.getHours()
 
-                        if (curHr < 12) {
+                        if (curHr >= 5 && curHr < 12) {
                         document.getElementById("cover-image").style.backgroundImage = "url('./public/images/morning.png')";
                         } else if (curHr>= 12 &&curHr < 17) {
                         document.getElementById("cover-image").style.backgroundImage = "url('./public/images/afternoon.jpg')";
                         } else if (curHr >= 17 && curHr < 19){
                         document.getElementById("cover-image").style.backgroundImage = "url('./public/images/evening1.jpg')";
-                        } else if (curHr >= 19){
+                        } else if (curHr >= 19 || curHr < 5){
                         document.getElementById("cover-image").style.backgroundImage = "url('./public/images/good-night.jpg')";
                         }
                                             </script>
@@ -185,12 +187,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-
-    <script src="./public/js/CONFIG.js"></script>
-    <script src="./public/js/app.js"></script>
-    <audio autoplay="" loop="" preload="auto">
-        <source src="../nhacweb.mp3">
-    </audio>
 </body>
 
 </html>
