@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link id="favicon" rel="shortcut icon" href="" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="./public/css/responsive.css">
+    <link rel="stylesheet" href="./public/css/vendor.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="center">
+        <div class="popup">
+            <div class="title">
+                Infomation
+            </div>
+            <div id="description">
+            </div>
+            <div class="dismiss-btn">
+                <button id="dismiss-popup-btn">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="root">
+        <div id="main">
+            <div class="container">
+
+
+                <header>
+                    <!-- link ảnh bìa của bạn -->
+                    <div id="cover-image" style=""></div>
+                    <script>
+                        var today = new Date()
+                        var curHr = today.getHours()
+
+                        if (curHr < 12) {
+                        document.getElementById("cover-image").style.backgroundImage = "url('./public/images/morning.png')";
+                        } else if (curHr>= 12 &&curHr < 17) {
+                        document.getElementById("cover-image").style.backgroundImage = "url('./public/images/afternoon.jpg')";
+                        } else if (curHr >= 17 && curHr < 19){
+                        document.getElementById("cover-image").style.backgroundImage = "url('./public/images/evening1.jpg')";
+                        } else if (curHr >= 19){
+                        document.getElementById("cover-image").style.backgroundImage = "url('./public/images/good-night.jpg')";
+                        }
+                                            </script>
+                    <div id="profile-header">
+                        <!-- link ảnh avt của bạn -->
+                        <div id="avatar-image"
+                            style="background-image: url('https://avatars.githubusercontent.com/u/96175523?v=4');">
+                        </div>
+                        <div id="name">
+                            <p id="last-name" class="names">Văn</p>
+                            <p id="first-name" class="names">Thanh</p>
+                            <div id="skills">
+
+                                <div class="skill-item" style="color: #EF9D64;">Web Developer</div>
+
+                                <div class="skill-item" style="color: #85D18A;">Indie Game Developer</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div style="padding: 0 0 0 20px;">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                    data-view-component="true" class="octicon octicon-link">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg>
+                <span
+                                    onclick="window.open('https://blog.olsen.ga', '_blank')">blog.olsen.ga</span>
+                    </div>
+                </header>
+
+
+                <div id="content-body">
+                    <p class="drop-title">Liên Kết Cá Nhân</p>
+                    <div id="link-box">
+
+                        <div class="link-item">
+                            <div class="bio-story-thumb" style="background-image: url('./public/images/facebook.jpg');">
+                            </div>
+                            <div class="link-content">
+                                <p>Facebook</p>
+                                <span
+                                    onclick="window.open('https://www.facebook.com/olsen.ngt/', '_blank')">@olsen.ngt</span>
+                            </div>
+                            <div class="link-btn">
+                                <div class="link-btn-chill light-orange"
+                                    onclick="window.open('https://www.facebook.com/olsen.ngt/', '_blank')">OPEN</div>
+                            </div>
+                        </div>
+
+                        <div class="link-item">
+                            <div class="bio-story-thumb" style="background-image: url('./public/images/zalo.jpg');">
+                            </div>
+                            <div class="link-content">
+                                <p>Zalo</p>
+                                <span onclick="window.open('https://zalo.me/0347768609', '_blank')">0347768609</span>
+                            </div>
+                            <div class="link-btn">
+                                <div class="link-btn-chill light-orange"
+                                    onclick="window.open('https://zalo.me/0347768609', '_blank')">OPEN</div>
+                            </div>
+                        </div>
+
+                        <div class="link-item">
+                            <div class="bio-story-thumb" style="background-image: url('./public/images/telegram.png');">
+                            </div>
+                            <div class="link-content">
+                                <p>Telegram</p>
+                                <span onclick="window.open('https://t.me/obghyhoa', '_blank')">@obghyhoa</span>
+                            </div>
+                            <div class="link-btn">
+                                <div class="link-btn-chill light-orange"
+                                    onclick="window.open('https://t.me/obghyhoa', '_blank')">OPEN</div>
+                            </div>
+                        </div>
+
+                        <div class="link-item">
+                            <div class="bio-story-thumb" style="background-image: url('./public/images/gmail.jpg');">
+                            </div>
+                            <div class="link-content">
+                                <p>Gmail</p>
+                                <span onclick="copy('bvthanh20012007@gmail.com')">bvthanh20012007@gmail.com</span>
+                            </div>
+                            <div class="link-btn">
+                                <div class="link-btn-chill light-blue" onclick="geturl('bvthanh20012007@gmail.com')">
+                                    COPY</div>
+                            </div>
+                        </div>
+
+                        <div class="link-item">
+                            <div class="bio-story-thumb" style="background-image: url('./public/images/phone.jpg');">
+                            </div>
+                            <div class="link-content">
+                                <p>Hotline</p>
+                                <span onclick="copy('0347768609')">0347768609</span>
+                            </div>
+                            <div class="link-btn">
+                                <div class="link-btn-chill light-blue" onclick="geturl('0347768609')">COPY</div>
+                            </div>
+                        </div>
+                        <div class="link-item">
+                            <div class="bio-story-thumb" style="background-image: url('./public/images/phone.jpg');">
+                            </div>
+                            <div class="link-content">
+                                <p>Hotline 1</p>
+                                <span onclick="copy('03343187448')">03343187448</span>
+                            </div>
+                            <div class="link-btn">
+                                <div class="link-btn-chill light-blue" onclick="geturl('03343187448')">COPY</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function geturl(giatri) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(giatri).select();
+            document.execCommand("copy");
+            $temp.remove();
+            alert("Copy thành công.");
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <script src="./public/js/CONFIG.js"></script>
+    <script src="./public/js/app.js"></script>
+    <audio autoplay="" loop="" preload="auto">
+        <source src="../nhacweb.mp3">
+    </audio>
+</body>
+
+</html>
