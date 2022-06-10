@@ -1,6 +1,7 @@
 html {
   background-color:rgb(204, 204, 204);
   background-image: url(./../images/bg.jpg);
+  background-size: cover;
   font-family:inter,sans-serif;
   margin:0;
   padding:0;
